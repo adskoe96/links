@@ -8,62 +8,44 @@
 </head>
 <body>
     <style>body{background-color: black;}</style>
-    <br/>
-    <br/>
     <center>
-    <style>
-        img {border-radius: 50%;}
-    </style>
-    <div class="parent">
-        
-    <img src="https://avatars.githubusercontent.com/u/73867345?s=400&u=1dee20359291fe214c02f7399ca41d0df1c9a3f5&v=4" alt="avatar" width=250/>
-</div>
-</center>
-   <div>
-   <p class="gradient-text2">Adskoe96</p>
-   <p class="gradient-text">Discord Profile: adsk#4140</p>
-</div>
-    <div>
-    <div>
-        <div class="box-3">
-            <div class="btn btn-one" id="opendisc">
-              <span>Discord Server</span>
-            </div>
-          </div>
-    </div>
-    <br/>
-
-    <div>
-    <div class="box-2">
-        <div class="btn btn-one" id="opengithub">
-            <span>Github</span>
-        </div>
-    </div>
-    </div>
-    <br/>
-        
-    <div>
-    <div class="box-2">
-         <div class="btn btn-one" id="opensteam">
-            <span>Steam</span>
-        </div>
-    </div>
-    </div>
-
-    <script type="text/javascript">
-        document.getElementById("opendisc").onclick = function () {
-            location.href = "https://discord.gg/yy5DZsx";
-        };
-    </script>
-    <script type="text/javascript">
-        document.getElementById("opengithub").onclick = function () {
-            location.href = "https://github.com/adskoe96";
-        };
-    </script>
-    <script type="text/javascript">
-        document.getElementById("opensteam").onclick = function () {
-            location.href = "https://steamcommunity.com/id/adskoe186/";
-        };
-    </script>
+        <br/>
+        <img src="https://avatars.githubusercontent.com/u/73867345?s=400&u=1dee20359291fe214c02f7399ca41d0df1c9a3f5&v=4" alt="avatar" width=250/>
+        <h3 class="rainbow rainbow_text_animated">Adskoe96</h3>
+        <p style="color: white;" id="text">Discord profile: adsk#4140</p>
+        <br/>
+        <button onclick="window.open('https://discord.gg/kZ6xQHWCXW','_blank')" class="glow-on-hover">Discord Server</button>
+        <br/>
+        <br/>
+        <button onclick="window.open('https://steamcommunity.com/id/adskoe186/','_blank')" class="glow-on-hover">Steam</button>
+        <br/>
+        <br/>
+        <button onclick="window.open('https://github.com/adskoe96','_blank')" class="glow-on-hover">Github</button>
+        <br/>
+        <br/>
+        <button onclick="window.open('https://www.roblox.com/users/747307297/profile','_blank')" class="glow-on-hover">Roblox</button>
+        <br/>
+        <br/>
+        <button onclick="window.open('https://www.roblox.com/groups/5954924/S-H-Games#!/about','_blank')" class="glow-on-hover">Roblox Group</button>
+    </center>
 </body>
+<script>
+        var text = document.getElementById('text');
+        var newDom = '';
+        var animationDelay = 6;
+
+        for(let i = 0; i < text.innerText.length; i++)
+        {
+            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        }
+
+        text.innerHTML = newDom;
+        var length = text.children.length;
+
+        for(let i = 0; i < length; i++)
+        {
+            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        }
+    
+</script>
 </html>
