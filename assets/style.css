@@ -71,6 +71,21 @@ img {
   animation: animate 3s linear infinite;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
+.glowtext{
+  text-shadow: 0px 0px 10px rgba(255,0,0,0.9);
+}
+
+.border-white{
+  /*border white with light shadow*/
+  text-shadow: 
+     1px  1px     #fff, 
+    -1px  1px     #fff, 
+     1px -1px     #fff, 
+    -1px -1px     #fff,
+     1px  1px 5px #555;
+}
+
 .glow-on-hover {
   width: 220px;
   height: 50px;
@@ -139,7 +154,7 @@ p{
 }
 
 .char{
-  font-size: 40px;
+  font-size: 30px;
   height: 40px;
   animation: an 1s ease-out 1 both;
   display: inline-block;
