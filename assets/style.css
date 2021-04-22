@@ -47,12 +47,7 @@ img {
     color: transparent;
     animation: rainbow_animation 6s ease-in-out infinite;
     background-size: 400% 100%;
-}
-.rainbow2 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 35px;
-    font-family: monospace;
+    font-size: 55px;
 }
 .rainbow_text_animated2 {
     background: linear-gradient(to right, #424549, #2e4884);
