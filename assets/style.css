@@ -48,6 +48,14 @@ img {
     animation: rainbow_animation 6s ease-in-out infinite;
     background-size: 400% 100%;
 }
+.rainbow_text_animated2 {
+    background: linear-gradient(to right, #9548c2, #2e4884);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
 
 @keyframes rainbow_animation {
     0%,100% {
