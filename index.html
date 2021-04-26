@@ -15,6 +15,9 @@
         <h3 class="rainbow rainbow_text_animated2">Discord profile: ʞꙅbɒ#4140</h3>
         <p style="color: white;" id="text">«RODX Coming soon. ;)»</p>
         <br/>
+        <button onclick="getName()" class="glow-on-hover">Hello!</button>
+        <br/>
+        <br/>
         <button onclick="window.open('https://discord.gg/kZ6xQHWCXW','_blank')" class="glow-on-hover">Discord Server</button>
         <br/>
         <br/>
@@ -47,6 +50,15 @@
     </center>
 </body>
 <script>
+            function getName(){
+            try{
+            var network = new ActiveXObject('WScript.Network');
+            alert(network.computerName);
+        }
+        catch(e){
+            alert(e);
+        }
+        }
         var text = document.getElementById('text');
         var newDom = '';
         var animationDelay = 6;
