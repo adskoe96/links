@@ -1,0 +1,55 @@
+body {
+	background: linear-gradient(-45deg, #2d0036, #330014, #170041, #460040);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+img {
+    border-radius: 50%;
+}
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 45px;
+    font-family: monospace;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #9548c2, #0099ff , #ff0000, #ff3399, #7474ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+    font-size: 55px;
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
