@@ -8,7 +8,6 @@
   transition: .4s;
   width: 250px;
   height: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #111;
 }
 .discord_btn:hover {
@@ -25,7 +24,6 @@
   transition: .4s;
   width: 250px;
   height: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #111;
 }
 .steam_btn:hover {
@@ -42,7 +40,6 @@
   transition: .4s;
   width: 250px;
   height: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #111;
 }
 .rblx_btn:hover {
