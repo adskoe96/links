@@ -1,37 +1,57 @@
-.sourcebutton {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
+.discord_btn {
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #ffffff;
+  border: double 4px #ffffff;
+  border-radius: 2px;
+  transition: .4s;
+  width: 250px;
+  height: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #111;
 }
-
-.button5 {
-  background-color: rgb(41, 41, 41);
-  color: rgb(207, 207, 207);
-  border: 2px solid #202020;
+.discord_btn:hover {
+  transform: rotateX(360deg);
+  color: #7289da;
 }
-
-.button5:hover {
-  background-color: #202020;
-  color: white;
+.steam_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #ffffff;
+  border: double 4px #ffffff;
+  border-radius: 2px;
+  transition: .4s;
+  width: 250px;
+  height: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #111;
+}
+.steam_btn:hover {
+  transform: rotateX(360deg);
+  color: #2a475e;
+}
+.rblx_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #ffffff;
+  border: double 4px #ffffff;
+  border-radius: 2px;
+  transition: .4s;
+  width: 250px;
+  height: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #111;
+}
+.rblx_btn:hover {
+  transform: rotateX(360deg);
+  color: #ff0000;
 }
 
 img {
   border-radius: 50%;
-}
-
-.button1 {width: 250px;}
-
-.disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
 }
 
 .rainbow {
@@ -45,18 +65,9 @@ img {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
-    font-size: 55px;
-}
-.rainbow_text_animated2 {
-    background: linear-gradient(to right, #424549, #2e4884);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
     animation: rainbow_animation 3s ease-in-out infinite;
-    background-size: 400% 100%;
-    font-size: 35px;
+    background-size: 200% 100%;
+    font-size: 55px;
 }
 
 @keyframes rainbow_animation {
@@ -96,66 +107,6 @@ img {
      1px  1px 5px #555;
 }
 
-.glow-on-hover {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-}
-
-.glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-}
-
-.glow-on-hover:active {
-  color: #000
-}
-
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
-}
-
 p{
   width: 70%;
   font-size: 30px;
@@ -179,4 +130,8 @@ p{
       opacity: 1;
       transform: perspective(500px) translate3d(0, 0, 0);
   }
+}
+.text_mini{
+  font-size: 10px;
+  opacity: 0.5;
 }
