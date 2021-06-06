@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=0.7">
+
 <head>
     <title>AdskLinks</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <style>body{background-color: black;}</style>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
     <center>
         <br/>
         <img src="https://avatars.githubusercontent.com/u/73867345?s=400&u=1dee20359291fe214c02f7399ca41d0df1c9a3f5&v=4" alt="avatar" width=250/>
-        <h3 class="rainbow rainbow_text_animated">Adskoe96</h3>
-        <p style="color: white;" id="text">Discord profile: adsk#4140</p>
+        <br/>
+        <br/>
+        <br/>
+        <div class="glitch" data-text="halfer">adskoe96</div>
+        <br/>
+        <div class="wrapper">
+            <div style="color: aliceblue; font-size: 30px;" class="typing">Discord: adsk#4140</div>
+        </div>
         <br/>
         <button onclick="window.open('https://discord.gg/kZ6xQHWCXW','_blank')" class="discord_btn">Discord Server</button>
         <br/>
@@ -34,30 +46,24 @@
     <br/>
     <br/>
     <br/>
+    <br/>
+    <br/>
 </body>
-<script>
-        var text = document.getElementById('text');
-        var newDom = '';
-        var animationDelay = 6;
-
-        for(let i = 0; i < text.innerText.length; i++)
-        {
-            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
-        }
-
-        text.innerHTML = newDom;
-        var length = text.children.length;
-
-        for(let i = 0; i < length; i++)
-        {
-            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
-        }
-    
-</script>
 <footer>
     <br/>
     <br/>
     <br/>
     <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <center>
+        <p class="text_mini">The whole site was created by: @adskoe96</p>
+    </center>
 </footer>
+
 </html>
