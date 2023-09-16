@@ -79,7 +79,7 @@ img:hover {
     border-color: #2a475e;
 }
 
-.rblx-btn {
+.red-btn {
     display: inline-block;
     padding: 0.5em 1.7em;
     margin: 0 0.1em 0.1em 0;
@@ -96,7 +96,7 @@ img:hover {
     font-family: 'VHS';
 }
 
-.rblx-btn:hover {
+.red-btn:hover {
     border-color: #b41b1b;
 }
 
