@@ -4,18 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>AdskLinks</title>
+    <style>
+        #orientationWarning {
+            display: none;
+        }
+    </style>
 </head>
 <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <div id="orientationWarning">Turn the device to landscape mode. | Поверните устройство в ландшафтный режим.</div>
+    <div id="orientationWarning">Пожалуйста, поверните устройство в ландшафтный режим.</div>
     <canvas id="unity-canvas" width="100%" height="100%" style="display: none; background: #000000"></canvas>
 
     <script src="Build/release.loader.js"></script>
     <script>
-        function isAndroid() {
-            return /Android/i.test(navigator.userAgent);
+        function isMobile() {
+            return /Mobi|Android/i.test(navigator.userAgent);
         }
 
         function checkOrientation() {
+            if (!isMobile()) {
+                document.getElementById('orientationWarning').style.display = 'none';
+                document.getElementById('unity-canvas').style.display = 'block';
+                startGame();
+                return;
+            }
+            
             if (window.orientation === 0 || window.orientation === 180) {
                 document.getElementById('orientationWarning').style.display = 'block';
                 document.getElementById('unity-canvas').style.display = 'none';
@@ -39,8 +51,8 @@
         }
 
         window.onload = function () {
-            if (isAndroid()) {
-                checkOrientation();
+            checkOrientation();
+            if (isMobile()) {
                 window.addEventListener("orientationchange", checkOrientation);
             }
         };
