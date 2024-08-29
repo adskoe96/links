@@ -6,9 +6,30 @@
     <title>AdskLinks</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <div id="orientationWarning">Please turn the device to landscape mode. | Пожалуйста, поверните устройство в ландшафтный режим.</div>
     <canvas id="unity-canvas" width=100% height=100% style="width: 100%; height: 100%; background: #000000"></canvas>
     <script src="Build/release.loader.js"></script>
     <script>
+      function isAndroid() {
+            return /Android/i.test(navigator.userAgent);
+        }
+
+        function checkOrientation() {
+            if (window.orientation === 0 || window.orientation === 180) {
+                document.getElementById('orientationWarning').style.display = 'block';
+            } else {
+                document.getElementById('orientationWarning').style.display = 'none';
+            }
+        }
+
+        window.onload = function() {
+            if (isAndroid()) {
+                checkOrientation();
+                
+                // Добавляем обработчики на изменение ориентации
+                window.addEventListener("orientationchange", checkOrientation);
+            }
+        };
       var meta = document.createElement('meta');
       meta.name = 'viewport';
       meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
