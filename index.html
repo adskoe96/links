@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>AdskLinks</title>
-  </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <div id="orientationWarning">Please turn the device to landscape mode. | Пожалуйста, поверните устройство в ландшафтный режим.</div>
-    <canvas id="unity-canvas" width=100% height=100% style="width: 100%; height: 100%; background: #000000"></canvas>
+</head>
+<body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <div id="orientationWarning">Turn the device to landscape mode. | Поверните устройство в ландшафтный режим.</div>
+    <canvas id="unity-canvas" width="100%" height="100%" style="display: none; background: #000000"></canvas>
+
     <script src="Build/release.loader.js"></script>
     <script>
-      function isAndroid() {
+        function isAndroid() {
             return /Android/i.test(navigator.userAgent);
         }
 
         function checkOrientation() {
             if (window.orientation === 0 || window.orientation === 180) {
                 document.getElementById('orientationWarning').style.display = 'block';
+                document.getElementById('unity-canvas').style.display = 'none';
             } else {
                 document.getElementById('orientationWarning').style.display = 'none';
+                document.getElementById('unity-canvas').style.display = 'block';
+                startGame();
             }
         }
 
-        window.onload = function() {
+        function startGame() {
+            createUnityInstance(document.querySelector("#unity-canvas"), {
+                dataUrl: "Build/release.data",
+                frameworkUrl: "Build/release.framework.js",
+                codeUrl: "Build/release.wasm",
+                streamingAssetsUrl: "StreamingAssets",
+                companyName: "adsk",
+                productName: "AdskLinks",
+                productVersion: "0.1",
+            });
+        }
+
+        window.onload = function () {
             if (isAndroid()) {
                 checkOrientation();
                 window.addEventListener("orientationchange", checkOrientation);
             }
         };
-      var meta = document.createElement('meta');
-      meta.name = 'viewport';
-      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-      document.getElementsByTagName('head')[0].appendChild(meta);
 
-      var canvas = document.querySelector("#unity-canvas");
-      canvas.style.width = "100%";
-      canvas.style.height = "100%";
-      canvas.style.position = "fixed";
-
-      document.body.style.textAlign = "left";
-
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/release.data",
-        frameworkUrl: "Build/release.framework.js",
-        codeUrl: "Build/release.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "adsk",
-        productName: "AdskLinks",
-        productVersion: "0.1",
-      });
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
     </script>
-  </body>
+</body>
 </html>
