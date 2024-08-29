@@ -25,8 +25,6 @@
         window.onload = function() {
             if (isAndroid()) {
                 checkOrientation();
-                
-                // Добавляем обработчики на изменение ориентации
                 window.addEventListener("orientationchange", checkOrientation);
             }
         };
