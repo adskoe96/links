@@ -1,0 +1,124 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.portfolio {
+  text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  word-wrap: break-word;
+}
+
+.portfolio-auto {
+  text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  word-wrap: break-word;
+}
+
+.projects {
+  text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.project-widget {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  cursor: default;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+h2 {
+  cursor: default;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+
+p {
+  outline-width: 1px;
+  outline: black;
+  cursor: default;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #772b2b;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button.github {
+  background-color: #40474e;
+}
+
+.button.alerts {
+  background-color: #725942;
+}
+
+.button.telegram {
+  background-color: #475b70;
+}
+
+.button.steam {
+  background-color: #1f3b58;
+}
+
+.button.cardbutton {
+  background-color: #4e4e4e34;
+}
+
+.button:hover {
+  opacity: 0.8;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.button i {
+  margin-right: 8px;
+}
