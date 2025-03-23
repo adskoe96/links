@@ -167,31 +167,20 @@ p {
   animation-duration: 7s;
 }
 
-@media (max-width: 768px) {
-  .portfolio, .portfolio-auto, .projects {
+@media screen and (max-width: 768px) {
+  body {
+    zoom: 0.9;
+  }
+
+  .portfolio {
     width: 90%;
-    margin: 10px auto;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cards .card {
-    width: 90%;
-    height: auto;
-    margin: 10px 0;
-  }
-
-  .cards .card img {
-    width: 100%;
-    height: auto;
+    padding: 15px;
+    margin: 15px 0;
   }
 
   .avatar {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   h1 {
@@ -203,7 +192,22 @@ p {
   }
 
   .button {
-    padding: 8px 12px;
     font-size: 14px;
+    padding: 8px 12px;
+    margin: 3px;
+  }
+
+  .projects {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .portfolio-auto {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .portfolio-auto img {
+    transform: scale(0.9);
   }
 }

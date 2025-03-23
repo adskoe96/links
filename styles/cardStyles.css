@@ -162,3 +162,31 @@ h2 strong,
   opacity: 1;
   transform: none;
 }
+
+
+@media screen and (max-width: 768px) {
+  .cards {
+    justify-content: center;
+  }
+
+  .cards .card {
+    width: 140px;
+    height: 210px;
+    margin: 10px;
+    transform-origin: center center;
+  }
+
+  .cards .card figcaption {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .button.cardbutton {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .cards .card:hover {
+    transform: translateY(-3px) scale(1.03) rotateX(10deg);
+  }
+}
