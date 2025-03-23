@@ -32,10 +32,10 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 70%;
+  width: 50%;
   word-wrap: break-word;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .portfolio.viewers {
@@ -209,15 +209,15 @@ p {
   }
 
   .portfolio {
-    width: 90%;
+    width: 80%;
   }
 
   .portfolio.viewers {
-    width: 90%;
+    width: 80%;
   }
   
   .portfolio.softlist {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -229,14 +229,14 @@ p {
   }
 
   .portfolio {
-    width: 90%;
+    width: 80%;
   }
 
   .portfolio.viewers {
-    width: 90%;
+    width: 80%;
   }
   
   .portfolio.softlist {
-    width: 90%;
+    width: 80%;
   }
 }
