@@ -2,6 +2,8 @@ html, body {
   overflow-x: hidden;
   width: 100%;
   min-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,12 +12,7 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 0;
-  overflow-x: hidden;
-  width: 100%;
-  min-width: 100vw;
 }
 
 .avatar {
@@ -33,7 +30,7 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 50%;
+  width: 70%;
   word-wrap: break-word;
   backdrop-filter: blur(2px) saturate(180%);
 }
@@ -59,7 +56,7 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   margin-bottom: 20px;
-  width: auto;
+  width: 70%;
   backdrop-filter: blur(2px) saturate(180%);
 }
 
@@ -67,6 +64,7 @@ body {
   background-color: #1e1e1e;
   border-radius: 10px;
   padding: 20px;
+  width: auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -177,58 +175,29 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    padding: 0 10px;
-  }
-
-  .portfolio {
-    width: 90%;
-    margin: 15px auto;
-    padding: 15px 10px;
-  }
-
-  .portfolio-auto, .projects {
-    width: 90%;
-    margin: 15px auto;
-    padding: 15px 10px;
-  }
-
   .avatar {
     width: 100px;
     height: 100px;
   }
 
   h1 {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 20px;
   }
 
   p {
-    font-size: 13px;
-    line-height: 1.4;
-    margin: 8px 0;
+    font-size: 14px;
   }
 
   .button {
-    font-size: 12px;
-    padding: 7px 10px;
-    margin: 4px;
-  }
-
-  .portfolio-auto img {
-    transform: scale(0.85);
-    margin: 0 -5px;
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .portfolio, .portfolio-auto, .projects {
-    width: 85%;
-  }
-
   .button {
     display: block;
     width: 90%;
-    margin: 5px auto;
+    margin: 10px auto;
   }
 }
