@@ -1,3 +1,9 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 100vw;
+}
+
 body {
   background: linear-gradient(to bottom right, rgb(10, 6, 34), rgb(53, 12, 46));
   color: #fff;
@@ -7,6 +13,9 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 100vw;
 }
 
 .avatar {
@@ -169,45 +178,25 @@ p {
 
 @media screen and (max-width: 768px) {
   body {
-    zoom: 0.9;
+    zoom: 1;
+    padding: 0 5px;
+  }
+
+  .portfolio, .portfolio-auto, .projects {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
   }
 
   .portfolio {
-    width: 90%;
-    padding: 15px;
-    margin: 15px 0;
+    width: 95%;
+    border-radius: 10px;
   }
 
-  .avatar {
-    width: 120px;
-    height: 120px;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  .button {
-    font-size: 14px;
-    padding: 8px 12px;
-    margin: 3px;
-  }
-
-  .projects {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .portfolio-auto {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .portfolio-auto img {
-    transform: scale(0.9);
+  #galaxy-background {
+    background: linear-gradient(to bottom right, rgb(10, 6, 34), rgb(53, 12, 46));
+    background-attachment: fixed;
   }
 }
