@@ -1,5 +1,5 @@
 body {
-  background-color: #121212;
+  background: linear-gradient(to bottom right, rgb(10, 6, 34), rgb(53, 12, 46));
   color: #fff;
   font-family: Arial, sans-serif;
   display: flex;
@@ -18,7 +18,7 @@ body {
 
 .portfolio {
   text-align: center;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e69;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -26,11 +26,12 @@ body {
   margin-bottom: 20px;
   width: 50%;
   word-wrap: break-word;
+  backdrop-filter: blur(2px) saturate(180%);
 }
 
 .portfolio-auto {
   text-align: center;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e69;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -38,17 +39,19 @@ body {
   margin-bottom: 20px;
   width: auto;
   word-wrap: break-word;
+  backdrop-filter: blur(2px) saturate(180%);
 }
 
 .projects {
   text-align: center;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e69;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   margin-bottom: 20px;
   width: auto;
+  backdrop-filter: blur(2px) saturate(180%);
 }
 
 .project-widget {
@@ -83,7 +86,7 @@ p {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  background-color: #772b2b;
+  background-color: #772b2b67;
   padding: 10px 15px;
   border-radius: 10px;
   margin: 5px;
@@ -91,22 +94,23 @@ p {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   font-size: 16px;
   font-weight: 600;
+  backdrop-filter: blur(2px) saturate(180%);
 }
 
 .button.github {
-  background-color: #40474e;
+  background-color: #40474e6c;
 }
 
 .button.alerts {
-  background-color: #725942;
+  background-color: #72594252;
 }
 
 .button.telegram {
-  background-color: #475b70;
+  background-color: #475b7065;
 }
 
 .button.steam {
-  background-color: #1f3b58;
+  background-color: #1f3b585d;
 }
 
 .button.cardbutton {
@@ -121,4 +125,44 @@ p {
 
 .button i {
   margin-right: 8px;
+}
+
+#galaxy-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: twinkle linear infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.star.small {
+  width: 1px;
+  height: 1px;
+  animation-duration: 3s;
+}
+
+.star.medium {
+  width: 2px;
+  height: 2px;
+  animation-duration: 5s;
+}
+
+.star.large {
+  width: 3px;
+  height: 3px;
+  animation-duration: 7s;
 }
