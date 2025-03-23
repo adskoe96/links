@@ -1,3 +1,5 @@
+@font-face { font-family: VCR; src: url('../fonts/vcr.ttf'); }
+
 html, body {
   overflow-x: hidden;
   width: 100%;
@@ -69,27 +71,32 @@ body {
 }
 
 h1 {
-  cursor: default;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-family: 'VCR';
   font-size: 24px;
+  cursor: default;
   margin: 0;
 }
 
 h2 {
+  font-weight: normal;
+  font-family: 'VCR';
   cursor: default;
-  font-family: 'Montserrat', sans-serif;
   margin-bottom: 15px;
 }
 
 p {
+  font-weight: normal;
+  font-family: 'VCR';
+  font-size: 16px;
   outline-width: 1px;
   outline: black;
   cursor: default;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .button {
+  font-weight: normal;
+  font-family: 'VCR';
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -100,7 +107,6 @@ p {
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   font-size: 16px;
-  font-weight: 600;
   backdrop-filter: blur(2px) saturate(180%);
 }
 
