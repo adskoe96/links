@@ -26,7 +26,7 @@ body {
 
 .portfolio {
   text-align: center;
-  background-color: #1e1e1e69;
+  background-color: #1e1e1e17;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -34,7 +34,8 @@ body {
   margin-bottom: 20px;
   width: 70%;
   word-wrap: break-word;
-  backdrop-filter: blur(2px) saturate(180%);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .portfolio-auto {
@@ -198,6 +199,10 @@ p {
     font-size: 14px;
     padding: 8px 12px;
   }
+
+  .portfolio {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -205,5 +210,9 @@ p {
     display: block;
     width: 90%;
     margin: 10px auto;
+  }
+  
+  .portfolio {
+    width: 90%;
   }
 }
