@@ -38,6 +38,14 @@ body {
   -webkit-backdrop-filter: blur(3px);
 }
 
+.portfolio.viewers {
+  width: 30%;
+}
+
+.portfolio.softlist {
+  width: 30%;
+}
+
 .portfolio-auto {
   text-align: center;
   background-color: #1e1e1e69;
@@ -203,6 +211,14 @@ p {
   .portfolio {
     width: 90%;
   }
+
+  .portfolio.viewers {
+    width: 90%;
+  }
+  
+  .portfolio.softlist {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -211,8 +227,16 @@ p {
     width: 90%;
     margin: 10px auto;
   }
-  
+
   .portfolio {
+    width: 90%;
+  }
+
+  .portfolio.viewers {
+    width: 90%;
+  }
+  
+  .portfolio.softlist {
     width: 90%;
   }
 }
