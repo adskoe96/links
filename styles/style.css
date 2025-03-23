@@ -178,25 +178,57 @@ p {
 
 @media screen and (max-width: 768px) {
   body {
-    zoom: 1;
-    padding: 0 5px;
-  }
-
-  .portfolio, .portfolio-auto, .projects {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 0;
+    padding: 0 10px;
   }
 
   .portfolio {
-    width: 95%;
-    border-radius: 10px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px 10px;
   }
 
-  #galaxy-background {
-    background: linear-gradient(to bottom right, rgb(10, 6, 34), rgb(53, 12, 46));
-    background-attachment: fixed;
+  .portfolio-auto, .projects {
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px 10px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 8px 0;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 7px 10px;
+    margin: 4px;
+  }
+
+  .portfolio-auto img {
+    transform: scale(0.85);
+    margin: 0 -5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio, .portfolio-auto, .projects {
+    width: 85%;
+  }
+
+  .button {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
   }
 }

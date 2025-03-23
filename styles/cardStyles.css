@@ -165,17 +165,6 @@ h2 strong,
 
 
 @media screen and (max-width: 768px) {
-  .cards {
-    justify-content: center;
-  }
-
-  .cards .card {
-    width: 140px;
-    height: 210px;
-    margin: 10px;
-    transform-origin: center center;
-  }
-
   .cards .card figcaption {
     font-size: 16px;
     padding: 10px;
@@ -188,5 +177,24 @@ h2 strong,
 
   .cards .card:hover {
     transform: translateY(-3px) scale(1.03) rotateX(10deg);
+  }
+
+  .cards .card {
+    width: 130px;
+    height: 190px;
+    margin: 8px;
+  }
+
+  .cards .card figcaption {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards .card {
+    width: 100%;
+    height: 200px;
+    margin: 8px 0;
   }
 }
