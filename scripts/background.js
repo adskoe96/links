@@ -18,6 +18,8 @@ function createGalaxy() {
         star.style.animationDelay = Math.random() * 10 + 's';
         container.appendChild(star);
     }
+
+    console.log("galaxy has been created!");
 }
 
 window.addEventListener('DOMContentLoaded', createGalaxy);
