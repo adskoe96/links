@@ -1,6 +1,7 @@
 function createBubbles() {
     const container = document.getElementById('bubble-background');
-    const bubbleCount = 35;
+    const isMobile = window.innerWidth < 768;
+    const bubbleCount = isMobile ? 15 : 35;
 
     for (let i = 0; i < bubbleCount; i++) {
         const bubble = document.createElement('div');
@@ -29,10 +30,9 @@ function createBubbles() {
         const duration = Math.random() * 15 + 10;
         const delay = Math.random() * 8;
         
-        bubble.style.animation = `
-            float ${duration}s ease-in-out ${delay}s infinite,
-            fadeInOut ${duration/2}s ease-in-out ${delay}s infinite alternate
-        `;
+        bubble.style.animation = isMobile 
+            ? `float ${duration}s ease-in-out ${delay}s infinite`
+            : `float ${duration}s ease-in-out ${delay}s infinite, fadeInOut ${duration/2}s ease-in-out ${delay}s infinite alternate`;
 
         container.appendChild(bubble);
     }
