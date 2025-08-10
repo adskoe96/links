@@ -2,6 +2,7 @@ function createBubbles() {
     const container = document.getElementById('bubble-background');
     const isMobile = window.innerWidth < 768;
     const bubbleCount = isMobile ? 15 : 35;
+    const bubbles = [];
 
     for (let i = 0; i < bubbleCount; i++) {
         const bubble = document.createElement('div');
@@ -34,7 +35,27 @@ function createBubbles() {
             ? `float ${duration}s ease-in-out ${delay}s infinite`
             : `float ${duration}s ease-in-out ${delay}s infinite, fadeInOut ${duration/2}s ease-in-out ${delay}s infinite alternate`;
 
+        bubble.style.transition = 'transform 0.5s ease-out';
+
+        const depth = Math.random() * 0.4 + 0.1;
+        bubble.dataset.depth = depth;
+
         container.appendChild(bubble);
+        bubbles.push(bubble);
+    }
+
+    if (!isMobile) {
+        document.addEventListener('mousemove', (event) => {
+            const mouseX = event.clientX / window.innerWidth - 0.5;
+            const mouseY = event.clientY / window.innerHeight - 0.5;
+
+            bubbles.forEach(bubble => {
+                const depth = parseFloat(bubble.dataset.depth);
+                const offsetX = -mouseX * 50 * depth;
+                const offsetY = -mouseY * 50 * depth;
+                bubble.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+            });
+        });
     }
 }
 
