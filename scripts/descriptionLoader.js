@@ -18,7 +18,7 @@ const myInfo = {
 };
 
 const description = `I'm just an ordinary ${calculateAge(myInfo.birthDate)}-year-old student,
-with an extraordinary passion for ${myInfo.hobby}.</br>
+with an extraordinary passion for ${myInfo.hobby}.
 While I might not churn out content at lightning speed, I'm deeply dedicated to what I do.
 I take my time to truly immerse myself in the materials I work with,
 focusing on creating projects that bring me personal joy and satisfaction.`;

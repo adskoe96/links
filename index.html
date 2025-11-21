@@ -2,107 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdskLinks</title>
-
-    <script src="scripts/descriptionLoader.js" defer></script>
-    <script src="scripts/bubbles.js" defer></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/cardStyles.css">
-
     <link rel="icon" type="image/x-icon" href="assets/ico/adsklinks.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <script src="scripts/descriptionLoader.js" defer></script>
 </head>
 
 <body>
-    <div id="bubble-background"></div>
+    <div id="animated-landscape">
+        <div class="star-layer layer-1"></div>
+        <div class="star-layer layer-2"></div>
+        <div class="star-layer layer-3"></div>
+    </div>
     
-    <div class="portfolio aero-glass">
-        <img class="avatar" src="https://avatars.githubusercontent.com/u/73867345?v=4" alt="Avatar">
-        <h1 class="text-glow">adsk-dev</h1>
-        <p>Welcome to my portfolio! Here you can find my projects and my socials.</p>
-        <div class="button-container">
-            <a class="button aero-button youtube" href="https://www.youtube.com/@adsk-dev" target="_blank">
-                <i class="fa fa-youtube"></i> YouTube
-            </a>
-            <a class="button aero-button github" href="https://github.com/adskoe96" target="_blank">
-                <i class="fa fa-github"></i> GitHub
-            </a>
-            <a class="button aero-button telegram" href="https://t.me/adsktg" target="_blank">
-                <i class="fa fa-telegram"></i> Telegram
-            </a>
-            <a class="button aero-button steam" href="https://steamcommunity.com/id/adskdev/" target="_blank">
-                <i class="fa fa-steam"></i> Steam
-            </a>
+    <div class="window main-window">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                <img src="https://win98icons.alexmeub.com/icons/png/user_world-0.png" class="icon-small"> user_profile.exe
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="centered-content">
+                <img class="avatar" src="https://avatars.githubusercontent.com/u/73867345?v=4" alt="Avatar">
+                <h3>adsk-dev</h3>
+                <p>Welcome to my portfolio! <br>System ready.</p>
+                <div class="button-container">
+                    <a class="win-link-button" href="https://www.youtube.com/@adsk-dev" target="_blank">
+                        <i class="fa fa-youtube"></i> YouTube
+                    </a>
+                    <a class="win-link-button" href="https://github.com/adskoe96" target="_blank">
+                        <i class="fa fa-github"></i> GitHub
+                    </a>
+                    <a class="win-link-button" href="https://t.me/adsktg" target="_blank">
+                        <i class="fa fa-telegram"></i> Telegram
+                    </a>
+                    <a class="win-link-button" href="https://steamcommunity.com/id/adskdev/" target="_blank">
+                        <i class="fa fa-steam"></i> Steam
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="portfolio aero-glass">
-        <h1 class="text-glow">About me</h1>
-        <p id="description">Enable JavaSript on this page for description :D</p>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                 <img src="https://win98icons.alexmeub.com/icons/png/notepad-0.png" class="icon-small"> Notepad - About.txt
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <textarea readonly style="width: 100%; height: 60px; resize: none;" id="description">Enable JavaScript on this page for description :D</textarea>
+        </div>
     </div>
 
-    <div class="portfolio aero-glass">
-        <h1 class="text-glow">Projects | Games</h1>
-        <div class="cards">
-            <a href="https://gamejolt.com/games/CPM/868873" class="card aero-card" target="_blank">
-                <div class="card-image">
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png" class="icon-small"> C:\My_Projects\Games
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="cards">
+                <a href="https://gamejolt.com/games/CPM/868873" class="game-card" target="_blank">
                     <img src="assets/cards/cpm-card.webp" alt="Creepy Ponyville">
-                    <div class="card-overlay">
-                        <i class="fa fa-eye"></i>
-                    </div>
-                </div>
-                <div class="card-content">
                     <p>Creepy Ponyville: Multiverse</p>
-                </div>
-            </a>
+                </a>
 
-            <a href="https://gamejolt.com/games/STRIMG/692709" class="card aero-card" target="_blank">
-                <div class="card-image">
+                <a href="https://gamejolt.com/games/STRIMG/692709" class="game-card" target="_blank">
                     <img src="assets/cards/strimg-card.webp" alt="Slendytubbies">
-                    <div class="card-overlay">
-                        <i class="fa fa-eye"></i>
-                    </div>
-                </div>
-                <div class="card-content">
                     <p>Slendytubbies Re-Imagined</p>
-                </div>
-            </a>
+                </a>
 
-            <a href="https://gamejolt.com/games/catfriends/913309" class="card aero-card" target="_blank">
-                <div class="card-image">
+                <a href="https://gamejolt.com/games/catfriends/913309" class="game-card" target="_blank">
                     <img src="assets/cards/cat-friends-card.webp" alt="Cat Friends">
-                    <div class="card-overlay">
-                        <i class="fa fa-eye"></i>
-                    </div>
-                </div>
-                <div class="card-content">
                     <p>Cat Friends Continuation</p>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
 
-    <div class="portfolio viewers aero-glass">
-        <h1 class="text-glow">Visitors</h1>
-        <p align="center">
-            <a>
-                <img alt="Moe Counter!" style="width: 80%;" src="https://count.getloli.com/@adskoe96.github?name=Moe-counter.github&theme=booru-lewd&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=0">
-            </a>
-        </p>
+    <div class="window" style="display: inline-block;">
+        <div class="title-bar">
+            <div class="title-bar-text">Traffic_Monitor</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body" style="text-align: center;">
+            <div class="sunken-panel">
+                <img alt="Moe Counter!" style="max-width: 100%; image-rendering: pixelated;" src="https://count.getloli.com/@adskoe96.github?name=Moe-counter.github&theme=booru-lewd&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=0">
+            </div>
+        </div>
     </div>
 
-    <div class="portfolio softlist aero-glass">
-        <h1 class="text-glow">Software</h1>
-        <img style="margin-top: 20px; max-width: 100%; height: auto;" src="https://skillicons.dev/icons?i=unity,unreal,blender,rider,vscode,git,mysql"/>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                <img src="https://win98icons.alexmeub.com/icons/png/settings_gear-0.png" class="icon-small"> System Properties
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <fieldset>
+                <legend>Software</legend>
+                <img style="max-width: 100%; image-rendering: pixelated;" src="https://skillicons.dev/icons?i=unity,unreal,blender,rider,vscode,git,mysql"/>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Programming Languages</legend>
+                <img style="max-width: 100%; image-rendering: pixelated;" src="https://skillicons.dev/icons?i=py,lua,cs,cpp"/>
+            </fieldset>
+        </div>
     </div>
 
-    <div class="portfolio softlist aero-glass">
-        <h1 class="text-glow">Programming Languages</h1>
-        <img style="margin-top: 20px; max-width: 100%; height: auto;" src="https://skillicons.dev/icons?i=py,lua,cs,cpp"/>
-    </div>
-    
 </body>
 </html>
