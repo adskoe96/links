@@ -1,0 +1,56 @@
+[
+    {
+        "id": "CPM",
+        "title": "Creepy Ponyville: Multiverse",
+        "image": "assets/cards/cpm-card.webp",
+        "link": "https://gamejolt.com/games/CPM/868873",
+        "description": "Luna Game, FlutterIsland, Bent.exe in one place!",
+        "isGame": true,
+        "contributors": [
+            {"name": "adsk-dev", "activity": "Lead Developer & Programmer"},
+            {"name": "AlBlet319", "activity": "Art Assets, helped with sprites", "link": "https://x.com/AlBlet319"},
+            {"name": "Apple-Pear_Tree", "activity": "Cave map", "link": "https://gamejolt.com/@Apple-Pear_Tree"},
+            {"name": "Hsancore3", "activity": "Dream map", "link": "https://www.youtube.com/@Hsancore3"},
+            {"name": "MrCatalyseur", "activity": "MAP02, Maze maps & OG Luna Game 3D creator", "link": "https://gamejolt.com/@MrCatalyseur"},
+            {"name": "Altarad", "activity": "Polish translator", "link": "https://www.youtube.com/channel/UChdzxcigKzUi5IQG8IV5OaA"}
+        ]
+    },
+    {
+        "id": "STRIMG",
+        "title": "Slendytubbies Re-Imagined",
+        "image": "assets/cards/strimg-card.webp",
+        "link": "https://gamejolt.com/games/STRIMG/692709",
+        "description": "Slendytubbies Re-Imagined - a horror game based on the original Slendytubbies.",
+        "isGame": true,
+        "contributors": [
+            {"name": "adsk-dev", "activity": "Lead Developer & Programmer"},
+            {"name": "ZeoWorks", "activity": "Original Concept Inspiration", "link": "https://zeoworks.com"},
+            {"name": "FantaDark", "activity": "Arts"},
+            {"name": "Amero", "activity": "Models", "link": "https://www.youtube.com/@Amero2005"},
+            {"name": "GODOINED", "activity": "Models", "link": "https://www.youtube.com/@GODOINED"}
+        ]
+    },
+    {
+        "id": "CATFRIENDS",
+        "title": "Cat Friends Continuation",
+        "image": "assets/cards/cat-friends-card.webp",
+        "link": "https://gamejolt.com/games/catfriends/913309",
+        "description": "Game developed by 1Games, patched and recreated by me.",
+        "isGame": true,
+        "contributors": [
+            {"name": "adsk-dev", "activity": "Patcher & Recreation"},
+            {"name": "1Games", "activity": "Original Developer"}
+        ]
+    },
+    {
+        "id": "RANDOMASYLUM",
+        "title": "Random Asylum",
+        "image": "assets/cards/random-asylum.webp",
+        "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=3590237349",
+        "description": "just fight with random SWEPs already!!",
+        "isGame": false,
+        "contributors": [
+            {"name": "adsk-dev", "activity": "Mod Creator"}
+        ]
+    }
+]
