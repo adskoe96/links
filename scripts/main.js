@@ -14,16 +14,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('description').innerHTML = `AGE: ${calculateAge(myInfo.birthDate)}<br>MISSION: ${myInfo.hobby}`;
 
     try {
-        const [projects, skills, badges] = await Promise.all([
+        const [projects, skills, badges, social] = await Promise.all([
             fetch('data/projects.json').then(r => r.json()),
             fetch('data/skills.json').then(r => r.json()),
-            fetch('data/badges.json').then(r => r.json())
+            fetch('data/badges.json').then(r => r.json()),
+            fetch('data/social.json').then(r => r.json())
         ]);
 
         const skillsContainer = document.getElementById('skills-list');
         skillsContainer.innerHTML = skills.map(s => 
             `<b style="color:${s.color};">[${s.name}]</b>`
         ).join(' ');
+
+        const socialContainer = document.getElementById('social-links');
+        socialContainer.innerHTML = social.map(s =>
+            `<b>[ <a href="${s.url}" target="_blank">${s.name}</a> ]</b><br>`
+        ).join('');
 
         const badgesContainer = document.getElementById('badges-container');
         badgesContainer.innerHTML = badges.map(b => 
